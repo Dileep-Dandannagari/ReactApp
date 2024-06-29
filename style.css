@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #d2dae2;
+    background-image: url("https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: repeat-y;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px
+}
+
+.notes-container {
+    width: 20%;
+    height: 300px;
+    background-color: #f4f4f4;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all ease 1s;
+    margin-bottom: 40px;
+    /* margin-top: 40px; */
+}
+
+.notes-container:hover {
+    transform: scale(1.1);
+}
+
+.tool-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #2d3436;
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+}
+
+.tool-bar i {
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.text-area {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+#add-notes-btn {
+    position: fixed;
+    background-color: #2d3436;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.date {
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 1px white;
+}
+
+.note-cursor {
+    width: 15px;
+    height: 15px;
+    background-color: crimson;
+    border-radius: 50%;
+    position: absolute;
+    transition: all linear 0.2s;
+    mix-blend-mode: difference;
+}
+
+@media screen and (max-width:450px){
+    .notes-container {
+        width: 90%;
+        height: 300px;
+        background-color: #f4f4f4;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        transition: all ease 1s;
+        margin-bottom: 40px;
+        /* margin-top: 40px; */
+    }
+}
